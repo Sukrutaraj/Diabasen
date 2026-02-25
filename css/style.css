@@ -752,3 +752,25 @@ body {
 .vand-studion:hover ~ .hover-vand-studion {
     opacity: 1;
 }
+
+.structure-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 4;
+}
+
+.show-structure .structure-overlay {
+  opacity: 1;
+}
+
+.map-view {
+  display: none;
+}
+
+.map-view.active-view {
+  display: block;
+}
